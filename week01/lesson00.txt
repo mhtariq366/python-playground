@@ -1,0 +1,23 @@
+1. Install VS Code
+
+2. Install Python
+
+2.1 Dont forget to add path to environment variables
+
+3. In VS Code, install python extension (from Microsoft)
+
+4. Install git on local machine (unless you're editing on github, jk)
+
+5. Fork the repo from fork button on my repo. (this will copy a version of this project to your own account)
+
+6. Run the command:
+        
+        # git clone https://github.com/your-user-name/python-playground
+
+    This was clone the repo from github to your local machine. 
+
+7. View the lesson, practise them. 
+
+8. Then solve the exercise provided in respective week.
+
+9. 
