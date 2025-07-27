@@ -29,3 +29,19 @@ print(type(var))    # this prints float, cause now variable is of float type
 
 var = "hello"
 print(type(var))    # this prints str
+
+
+"""
+Type conversion.
+
+you can convert one variable data type to another. its called type casting
+for example: from int to float
+
+just write the new data type before the name of variable, and encolse the variable name in ()
+"""
+
+var = 5 
+print(type(5))      # it is int at the moment, lets convert.
+
+var = float(var)    # type casting
+print("After converion: ", type(var))   # now the type is float
