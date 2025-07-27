@@ -1,6 +1,5 @@
-print("*********** Hello! ***********")
-
 #Variables
+
 """
 Variable names can be of different types. Almost the same naming conventions,
 as that of other languages.
