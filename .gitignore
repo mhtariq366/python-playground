@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.env
+.venv
+*.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+
+# Data Files
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.zip
+*.log
+*.h5
+*.db
+
+# Notebooks outputs (optional)
+*.out
+*.bak
+
+# Environment
+.env/
+.venv/
+env/
+venv/
