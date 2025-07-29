@@ -41,3 +41,5 @@ if jump is left blank, if assumes a jump of +1 in every iteration.
 
 for i in range(50, 25, -2):
     print(i)        # print starts from 50, decrements to 25, with -2 jumps. Will stop at 26.
+
+################### After this, try to solve exercise 01 ###################
