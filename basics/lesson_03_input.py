@@ -1,6 +1,6 @@
 # Input
 
-# input like in any other language, is taken for various purposes. Python simplifies this via the command
+# input like in any other language, is taken for various purposes. Python performs the input process via the command:
 
 input() 
 
