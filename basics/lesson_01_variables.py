@@ -1,10 +1,9 @@
 #Variables
 
 """
-Variable names can be of different types. Almost the same naming conventions,
-as that of other languages.
+Variables are used to store data. Variable names can be of different types. Almost the same naming conventions, as that of other languages.
 There are no variable declarations used in python.
-A variable is created the very moment you assign a value to the variable.
+The variable is created the very moment you assign a value to the variable.
 
 For example: 
 
