@@ -1,5 +1,6 @@
 """
-String is fascinating. in some languages, like cpp. string is used by calling a library.
+Strings are fascinating.
+In some languages, like cpp. string is used by calling a library.
 python has built in str data type.
 """
 
