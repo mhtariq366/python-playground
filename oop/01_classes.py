@@ -16,4 +16,4 @@ class Vehicle:
 
 
 vehicle = Vehicle("Car")    # create an object and pass the parameter to init function.
-vehicle.vehile_type()
+vehicle.vehile_type() # calling class function
