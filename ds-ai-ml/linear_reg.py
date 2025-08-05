@@ -8,10 +8,17 @@ def get_y(x):
 x = [random.randint(1,20) for _ in range(10)]
 y = [random.randint(1,200) for _ in range(10)]
 
-m, c, r, p, std_err = stats.linregress(x, y)
+m, c, r, p, err = stats.linregress(x, y)
 
 lin_model = list(map(get_y, x))
 
 plt.scatter(x,y)
 plt.plot(x, lin_model)
-plt.show()
+#plt.show()
+
+print(f"m: {m}")
+print(f"c: {c}")
+print(f"r: {r}")
+print(f"p: {p}")
+print(f"err: {err}")
+
