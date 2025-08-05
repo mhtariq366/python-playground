@@ -14,7 +14,7 @@ lin_model = list(map(get_y, x))
 
 plt.scatter(x,y)
 plt.plot(x, lin_model)
-#plt.show()
+plt.show()
 
 print(f"m: {m}")
 print(f"c: {c}")
