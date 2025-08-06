@@ -10,7 +10,7 @@ Topics covered:
 * Data Structures
     - Lists, tuples, dictionary
 * Data Science, ML and AI topics
-    - linear regressions
+    - linear regression
 * Libraries
     - numpy
     - regular expressions
