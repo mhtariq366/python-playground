@@ -11,3 +11,7 @@ Topics covered:
     - Lists, tuples, dictionary
 * Data Science, ML and AI topics
     - linear regressions
+* Libraries
+    - numpy
+    - regular expressions
+    - pandas
