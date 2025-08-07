@@ -26,4 +26,9 @@ y = m * x + c
 
 print(f"Manually Calculated: {y}")
 
+plt.scatter(df.area, df.price)
+plt.xlabel('Area')
+plt.ylabel('Price')
+plt.plot(df.area, lin_reg.predict(df[['area']]), color='green')
+plt.show()
 
