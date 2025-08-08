@@ -1,4 +1,14 @@
-# basic linear reg example
+"""
+basic linear reg example
+using stats.linregress from scipy.
+this is simpler method to implement linear regression.
+the functions takes two 1D arrays and returns 5 values.
+
+Prediction on new data can be done manually using the mx+c formula.
+
+for Machine Learning based applications. preferably use the linear regression from linear model in sklearn. 
+its done in file named lin_reg.py in the same folder. 
+"""
 import matplotlib.pyplot as plt
 import random
 from scipy import stats
