@@ -49,3 +49,20 @@ print(df.columns)
 # returns shape, ( no. of rows, no. of columns )
 print(df.shape)
 
+
+# access a column by name
+print(df['PassengerId'])
+
+
+# access multiple columns by name
+print(df[['PassengerId', 'Name']])
+
+
+# access rows with index
+print(df.loc[3])                # single row with index 3
+print(df.loc[1:5])              # using slicing, select rows from 1 to 5
+print(df.loc[3, 'Name'])        # single row with index 3 and column name Name, two variables
+
+
+# filter using conditions
+print(df[df['PassengerId'] < 3])    # filter with passengerId column, having id less then 3.
