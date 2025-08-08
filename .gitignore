@@ -29,6 +29,7 @@ build/
 *.log
 *.h5
 *.db
+*.txt
 
 # Notebooks outputs (optional)
 *.out
@@ -42,3 +43,4 @@ venv/
 
 
 .DS_Store
+.txt
