@@ -5,12 +5,21 @@ Nonetheless, a beginner is welcome. ***
 
 Topics covered:
 * Python basics
-    - Variables, comments, input & output, if-else, loops, functions, str.
+    - Variables
+    - Comments
+    - Input & Output
+    - if-else, elif
+    - Loops
+    - Functions
+    - str
 * Object Oriented Programming
+    - Classes
 * Data Structures
-    - Lists, tuples, dictionary
+    - List
+    - Tuple
+    - Dictionary
 * Data Science, ML and AI topics
-    - linear regression
+    - linear regression( with stat and linearModel)
 * Libraries
     - numpy
     - regular expressions
