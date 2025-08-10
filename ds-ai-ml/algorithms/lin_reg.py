@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import linear_model
 from scipy import stats
+import pickle
 
 df = pd.read_csv('ds-ai-ml/lin_reg.csv')
 
@@ -37,3 +38,11 @@ plt.show()
 #   checking if they really are correlated. r value should be closer to 1 or -1
 m,c,r,p,err = stats.linregress(df.area, df.price)
 print(r)
+
+#   save built model to a binary file
+with open('lin_reg_model', 'wb') as f:
+    pickle.dump(lin_reg, f)
+
+#   get saved model
+with open('lin_reg_model', 'rb') as f:
+    mod = pickle.load(f)
