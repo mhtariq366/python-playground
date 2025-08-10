@@ -19,3 +19,4 @@ lin_reg.fit(x,y)
 
 print(lin_reg.predict([[1,1,0]]))
 
+print(lin_reg.score(x,y))
