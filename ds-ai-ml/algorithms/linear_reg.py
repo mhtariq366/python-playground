@@ -1,5 +1,5 @@
 """
-basic linear reg example
+basic linear regression example
 using stats.linregress from scipy.
 this is simpler method to implement linear regression.
 the functions takes two 1D arrays and returns 5 values.

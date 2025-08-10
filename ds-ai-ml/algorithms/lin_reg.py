@@ -12,7 +12,7 @@ lin_reg.fit(df[['area']], df.price)
 # predict price of a specific area
 print(f"Automatically Calculated: {lin_reg.predict([[3000]])}")
 
-# since linear regression uses y= mx +c . so lets manually perform these and check if calculations are correct.
+# since linear regression uses y= mx + c . so lets manually perform these and check if calculations are correct.
 
 # get value of m
 m = lin_reg.coef_
