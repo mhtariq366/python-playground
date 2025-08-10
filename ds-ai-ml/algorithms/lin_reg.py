@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import linear_model
+from scipy import stats
 
 df = pd.read_csv('ds-ai-ml/lin_reg.csv')
 
@@ -32,3 +33,7 @@ plt.ylabel('Price')
 plt.plot(df.area, lin_reg.predict(df[['area']]), color='green')
 plt.show()
 
+
+#   checking if they really are correlated. r value should be closer to 1 or -1
+m,c,r,p,err = stats.linregress(df.area, df.price)
+print(r)
