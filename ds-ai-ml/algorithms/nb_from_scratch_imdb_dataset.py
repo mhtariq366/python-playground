@@ -58,5 +58,42 @@ for w in neg_bog:
     prob_neg_words[w] = (neg_bog[w] + 1 ) / (len(neg_bog) + len(vocab))
 
 
-print(prob_neg_words['the'])
+# print(prob_neg_words['the'])
+
+#### Testing begins
+
+test_docs = defaultdict(int)
+
+actual = []
+predicted = []
+
+for i in range(len(test_set)):
+    if 'negative' in test_set[i].split(',')[-1]:
+        actual.append(0)
+    elif 'positive' in test_set[i].split(',')[-1]:
+        actual.append(1)
+
+for i in range(len(test_set)):
+    temp_prob_pos = 1
+    temp_prob_neg = 1
+    for w in test_set[i].split()[:1]:
+        alpha_num = re.sub(r'[^a-zA-Z0-9]', '', w)
+        alpha_num = alpha_num.lower()
+        temp_prob_pos *= prob_pos_words[alpha_num]
+        temp_prob_neg *= prob_neg_words[alpha_num]
+    temp_prob_pos *= prior_prob_pos
+    temp_prob_neg *= prior_prob_neg
+
+    if temp_prob_neg > temp_prob_pos:
+        predicted.append(0)
+    else:
+        predicted.append(1)
+
+crct = 0
+
+for i in range(len(actual)):
+    if actual[i] == predicted[i]:
+        crct += 1
+
+print(f"Accuracy: {crct/len(predicted)}")
 
