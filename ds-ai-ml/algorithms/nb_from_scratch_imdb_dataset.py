@@ -90,10 +90,30 @@ for i in range(len(test_set)):
         predicted.append(1)
 
 crct = 0
+tp=fp=fn=tn=0
 
 for i in range(len(actual)):
     if actual[i] == predicted[i]:
         crct += 1
+    if actual[i] == 1 and predicted[i] == 1:
+        tp += 1
+    elif actual[i] == 0 and predicted[i] == 1:
+        fp += 1
+    elif actual[i] == 0 and predicted[i] == 0:
+        tn += 1
+    if actual[i] == 1 and predicted[i] == 0:
+        fn += 1
+
 
 print(f"Accuracy: {crct/len(predicted)}")
 
+print(f"TP: {tp}, FP: {fp}, TN: {tn}, FN: {fn}")
+
+precision = tp / (tp+fp)
+recall = tp / (tp+fn)
+
+print(f"Precision: {precision}, Recall: {recall}")
+
+f1 = 2 * ((precision * recall) / (precision + recall))
+
+print(f"F1: {f1}")
