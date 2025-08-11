@@ -13,14 +13,23 @@ test_set = lines[n:]
 train_neg_count=0
 train_pos_count=0
 
+pos_bog = defaultdict(int)
+neg_bog = defaultdict(int)
+
 for i in range(len(train_set)):
     if 'negative' in train_set[i].split(',')[-1]:
+        for w in train_set[i].split()[:1]:
+            neg_bog[w.lower()] += 1
         train_neg_count += 1
     elif 'positive' in train_set[i].split(',')[-1]:
+        for w in train_set[i].split()[:1]:
+            pos_bog[w.lower()] += 1
         train_pos_count += 1
 
 prior_prob_neg = train_neg_count/(train_neg_count+train_pos_count)
 prior_prob_pos = train_pos_count/(train_neg_count+train_pos_count)
 
-print(prior_prob_neg, '---', prior_prob_pos)
+# print(prior_prob_neg, '---', prior_prob_pos)
 
+
+# print(neg_bog['the'])
