@@ -18,8 +18,6 @@ Topics covered:
     - List
     - Tuple
     - Dictionary
-* Data Science, ML and AI topics
-    - linear regression( with stat and linearModel)
 * Libraries
     - numpy
     - regular expressions
