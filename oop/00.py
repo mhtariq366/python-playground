@@ -1,4 +1,8 @@
+oop = """
 OOP is a style of organizing your code. it allows, structured code, with separate entities, objects.
 The objects represent entities in the real world. Such as a car. 
 
 There are many concept we'll explore such as classes, inheritance, polymorphism and so on.
+"""
+
+print(oop)
