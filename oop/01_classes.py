@@ -12,6 +12,7 @@ class Vehicle:
     def __init__(self, v_type):
         self.v_type = v_type
 
+    #   a member function of class
     def vehile_type(self):
         print(f"The vehile type is {self.v_type}")
 
