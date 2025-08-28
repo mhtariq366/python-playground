@@ -1,4 +1,5 @@
 # regular expressions
+# regular expressions are also used in preprocessing tasks to filter out textual data.
 
 import re
 
