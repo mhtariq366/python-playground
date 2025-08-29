@@ -30,3 +30,12 @@ try:
     print(1/0)
 except Exception as e:
     print(f'Except block error type: {type(e).__name__} : {str(e)}')
+
+"""
+You can also raise an error using the raise keyword as follows.
+"""
+
+num = '15'
+
+if type(num) != int:
+    raise Exception('Number must be integer type')
