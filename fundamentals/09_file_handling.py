@@ -36,5 +36,30 @@ f_obj.close()
 
 
 """
-we have seen 
+we have seen that we have to explicitly close the file once we are done with the file.
+to ease this, we now use the 'with' keyword to open file.
+"""
+with open('file_handling.txt') as f_obj:
+    print(f_obj.read())
+
+
+"""
+since we have been using a text file, we did not need to write modes in the open function.
+Modes are to indicate what we are going to do with the file. Modes are as follows:
+r   read
+w   write
+t   text file
+b   binary file
+a   append
+x   create
+lets use the read mode.
+"""
+print('Start using modes:')
+
+with open('file_handling.txt', 'rt') as f_obj:  #   we use mode r and t. this means read text file 
+    print(f_obj.read())
+
+
+"""
+lets now create a new file.
 """
