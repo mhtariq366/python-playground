@@ -61,5 +61,27 @@ with open('file_handling.txt', 'rt') as f_obj:  #   we use mode r and t. this me
 
 
 """
-lets now create a new file.
+lets now create a new file. We are using the create mode.
+The below code will create a new file in the same folder as the python file.
+if using the create mode named 'x'. The new file can only be created if the file with same path and file name does not exist already.
+If the file with same path and name already exists, then an error will be raised.
 """
+
+with open('newfile_text.txt', 'x') as f_obj:
+    f_obj.write('New file using create mode')
+
+
+"""
+Now we will look at writing in the file. We will use the new file created just above.
+"""
+with open('newfile_text.txt', 'w') as f_obj:
+    f_obj.write('Writing in new file')
+
+"""
+After running the code to write in the new file. You can see that the text written in above line when new file was being created has been overwritten by the write file lines above.
+To avoid this issue, if your use case demands to not over write an already written file, then do not use the write mode. instead, use the append mode. lets try it.
+"""
+
+with open('newfile_text.txt', 'a') as f_obj:
+    f_obj.write('\nAppending in the new file.')
+
