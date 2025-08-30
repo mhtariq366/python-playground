@@ -22,3 +22,4 @@ Topics covered:
     - numpy
     - regular expressions
     - pandas
+    - random
