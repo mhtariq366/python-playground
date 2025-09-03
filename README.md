@@ -24,6 +24,7 @@ Topics covered:
     - List
     - Tuple
     - Dictionary
+    - Sets
 * Libraries
     - numpy
     - regular expressions
