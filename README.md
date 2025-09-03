@@ -30,3 +30,4 @@ Topics covered:
     - regular expressions
     - pandas
     - random
+    - datetime
