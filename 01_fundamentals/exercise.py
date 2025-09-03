@@ -6,6 +6,6 @@
 # 02. Using loops, wirte code for factorial calculation of an input number.
 # 03. Make shapes of square, diamond, using loops.
 # 04. Get an input, and write fibonacci sequence uptil the input number.
-# 05. 
+# 05. Write problem of fibonacci with 0 input in try except blocks. 
 
 
