@@ -18,8 +18,17 @@ Topics covered:
     - Loops
     - Functions
     - str
+    - file handling
+    - exception handling
+    - lambda
+    - maps
+    - filter
+    - recursion
 * Object Oriented Programming
     - Classes
+    - __str__
+    - objects
+    - inheritance
 * Data Structures
     - List
     - Tuple
@@ -31,3 +40,5 @@ Topics covered:
     - pandas
     - random
     - datetime
+* Practise Problems
+    - 
